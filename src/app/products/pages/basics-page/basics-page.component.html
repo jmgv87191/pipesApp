@@ -1,4 +1,4 @@
-<p-panel [showHeader]="false" >
+<p-panel header="Pipes Basicos" class="p-1" >
 
     <h1> Pipes Basicos </h1>
     <p>
@@ -7,21 +7,21 @@
 
 </p-panel>
 
-<div class="p-grid">
+<div class="grid">
     
-    <div class="p-col-4">
+    <div class="col-4">
         <p-card header="uppercase" >
             {{ nameLower | uppercase }}
         </p-card>
     </div>
 
-    <div class="p-col-4">
+    <div class="col-4">
         <p-card header="lowercase" >
             {{ nameUpper | lowercase }}
         </p-card>
     </div>
 
-    <div class="p-col-4">
+    <div class="col-4">
         <p-card header="titlecase" >
             {{ nameFull | titlecase }}
         </p-card>
