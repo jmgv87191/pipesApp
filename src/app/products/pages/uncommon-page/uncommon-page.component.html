@@ -77,15 +77,27 @@
         </p-fieldset>
     </div>
     
-    <div class="col-12 md:col-6">
+<!--     <div class="col-12 md:col-6">
         <p-fieldset legend="Async Pipe" [toggleable]="true" >
             
+            @if ( !(myObservableTimer | async)  ) {
+                <pre>Resolviendo obserbable</pre>
+            }
+
             <pre>
-                {{ myObservableTimer | json }}
+                {{ myObservableTimer | async }}
+            </pre>
+            
+            @if ( !(promiseValue | async)  ) {
+                <pre>Resolviendo promesa</pre>
+            }
+
+            <pre>
+                {{ promiseValue | async }}
             </pre>
 
         </p-fieldset>
-    </div>
+    </div> -->
     
 
 </div>
